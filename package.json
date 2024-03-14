@@ -1,0 +1,15 @@
+{
+  "name": "andy",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:fernandocamargo/andy.git",
+  "license": "MIT",
+  "scripts": {
+    "generate": "node ./scripts/generate.js",
+    "start": "yarn run \"http-server\""
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "puppeteer": "^22.4.1"
+  }
+}
