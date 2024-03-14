@@ -84,7 +84,6 @@ main#mediakit {
     }
 
     &:nth-child(2) {
-      filter: grayscale(75%);
       max-height: 100vh;
       overflow: hidden;
 
