@@ -24,7 +24,7 @@ const puppeteer = require('puppeteer');
         path: 'mediakit.pdf', // Output file path
         printBackground: true, // Print background graphics,
         width: '1425px',
-        height: '703px',
+        height: '3515px',
     });
 
     await browser.close();
