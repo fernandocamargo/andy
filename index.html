@@ -17,7 +17,7 @@
   </head>
   <body>
     <main id="mediakit">
-      <section>
+      <section aria-roledescription="about-me">
         <h1>About me</h1>
         <p>
           Welcome to <dfn>andysparkles</dfn>, where passion meets adventure and
@@ -73,9 +73,9 @@
           >
         </p>
       </section>
-      <section>
-        <h1>Gallery</h1>
-        <article>
+      <section aria-roledescription="gallery">
+        <h1>The world through my lenses</h1>
+        <div>
           <figure>
             <img src="./assets/image/gallery/01.jpeg" alt="Gallery #1" />
             <figcaption>Gallery #1</figcaption>
@@ -120,6 +120,295 @@
             <img src="./assets/image/gallery/11.jpeg" alt="Gallery #11" />
             <figcaption>Gallery #11</figcaption>
           </figure>
+        </div>
+      </section>
+      <section aria-roledescription="presence">
+        <h1>My digital presence and audience</h1>
+        <nav>
+          <h2>Follow me</h2>
+          <ul>
+            <li aria-roledescription="instagram">
+              <a
+                href="https://www.instagram.com/andysparkles"
+                target="_blank"
+                title="Instagram"
+                >Instagram</a
+              >
+            </li>
+            <li aria-roledescription="pinterest">
+              <a
+                href="https://www.pinterest.de/andyfunkelt/"
+                target="_blank"
+                title="Pinterest"
+                >Pinterest</a
+              >
+            </li>
+            <li aria-roledescription="tiktok">
+              <a
+                href="https://www.tiktok.com/@andysparkles_"
+                target="_blank"
+                title="TikTok"
+                >TikTok</a
+              >
+            </li>
+            <li aria-roledescription="youtube">
+              <a
+                href="https://www.youtube.com/andysparklesblog"
+                target="_blank"
+                title="Youtube"
+                >Youtube</a
+              >
+            </li>
+            <li aria-roledescription="facebook">
+              <a
+                href="https://www.facebook.com/andysparkles.blog"
+                target="_blank"
+                title="Facebook"
+                >Facebook</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <article aria-roledescription="instagram-insights">
+          <h2>Instagram audience</h2>
+          <dl>
+            <dt>Engagement Rate</dt>
+            <dd>1,43%</dd>
+          </dl>
+          <form>
+            <fieldset>
+              <legend>Gender segments</legend>
+              <fieldset>
+                <legend>
+                  <label for="instagram-gender-female">Female</label>
+                </legend>
+                <progress id="instagram-gender-female" max="100" value="62.3">
+                  62,3%
+                </progress>
+              </fieldset>
+              <fieldset>
+                <legend>
+                  <label for="instagram-gender-male">Male</label>
+                </legend>
+                <progress id="instagram-gender-male" max="100" value="37.6">
+                  37,6%
+                </progress>
+              </fieldset>
+              <fieldset>
+                <legend>
+                  <label for="instagram-gender-other">Other</label>
+                </legend>
+                <progress id="instagram-gender-other" max="100" value="0.1">
+                  0,1%
+                </progress>
+              </fieldset>
+            </fieldset>
+          </form>
+          <form>
+            <fieldset>
+              <legend>Origin segments</legend>
+              <fieldset>
+                <legend>
+                  <label for="instagram-origin-germany">Germany</label>
+                </legend>
+                <progress id="instagram-origin-germany" max="100" value="59.4">
+                  59,4%
+                </progress>
+              </fieldset>
+              <fieldset>
+                <legend>
+                  <label for="instagram-origin-austria">Austria</label>
+                </legend>
+                <progress id="instagram-origin-austria" max="100" value="5">
+                  5%
+                </progress>
+              </fieldset>
+              <fieldset>
+                <legend>
+                  <label for="instagram-origin-usa">USA</label>
+                </legend>
+                <progress id="instagram-origin-usa" max="100" value="2.7">
+                  2,7%
+                </progress>
+              </fieldset>
+              <fieldset>
+                <legend>
+                  <label for="instagram-origin-india">India</label>
+                </legend>
+                <progress id="instagram-origin-india" max="100" value="1.9">
+                  1,9%
+                </progress>
+              </fieldset>
+              <fieldset>
+                <legend>
+                  <label for="instagram-origin-italia">Italia</label>
+                </legend>
+                <progress id="instagram-origin-italia" max="100" value="1.7">
+                  1,7%
+                </progress>
+              </fieldset>
+              <fieldset>
+                <legend>
+                  <label for="instagram-origin-other">Other</label>
+                </legend>
+                <progress id="instagram-origin-other" max="100" value="29.3">
+                  29,3%
+                </progress>
+              </fieldset>
+            </fieldset>
+          </form>
+          <form>
+            <fieldset>
+              <legend>Age segments</legend>
+              <fieldset>
+                <legend>
+                  <label for="instagram-age-13-17">13-17</label>
+                </legend>
+                <progress id="instagram-age-13-17" max="100" value="3.7">
+                  3,7%
+                </progress>
+              </fieldset>
+              <fieldset>
+                <legend>
+                  <label for="instagram-age-18-24">18-24</label>
+                </legend>
+                <progress id="instagram-age-18-24" max="100" value="28.7">
+                  28,7%
+                </progress>
+              </fieldset>
+              <fieldset>
+                <legend>
+                  <label for="instagram-age-25-34">25-34</label>
+                </legend>
+                <progress id="instagram-age-25-34" max="100" value="34.6">
+                  34,6%
+                </progress>
+              </fieldset>
+              <fieldset>
+                <legend>
+                  <label for="instagram-age-35-44">35-44</label>
+                </legend>
+                <progress id="instagram-age-35-44" max="100" value="20">
+                  20%
+                </progress>
+              </fieldset>
+              <fieldset>
+                <legend>
+                  <label for="instagram-age-45-64">45-64</label>
+                </legend>
+                <progress id="instagram-age-45-64" max="100" value="3">
+                  3%
+                </progress>
+              </fieldset>
+              <fieldset>
+                <legend>
+                  <label for="instagram-age-65-plus">65+</label>
+                </legend>
+                <progress id="instagram-age-65-plus" max="100" value="1.2">
+                  1,2%
+                </progress>
+              </fieldset>
+              <fieldset>
+                <legend>
+                  <label for="instagram-age-other">Other</label>
+                </legend>
+                <progress id="instagram-age-other" max="100" value="8.8">
+                  8,8%
+                </progress>
+              </fieldset>
+            </fieldset>
+          </form>
+        </article>
+        <article aria-roledescription="google-analytics-insights">
+          <h2>Google Analytics</h2>
+          <dl>
+            <dt>Unique visitors</dt>
+            <dd>~10k</dd>
+          </dl>
+          <form>
+            <fieldset>
+              <legend>Gender segments</legend>
+              <fieldset>
+                <legend>
+                  <label for="google-analytics-gender-female">Female</label>
+                </legend>
+                <progress
+                  id="google-analytics-gender-female"
+                  max="100"
+                  value="74"
+                >
+                  74%
+                </progress>
+              </fieldset>
+              <fieldset>
+                <legend>
+                  <label for="google-analytics-gender-other">Other</label>
+                </legend>
+                <progress
+                  id="google-analytics-gender-other"
+                  max="100"
+                  value="26"
+                >
+                  26%
+                </progress>
+              </fieldset>
+            </fieldset>
+          </form>
+          <form>
+            <fieldset>
+              <legend>Origin segments</legend>
+              <fieldset>
+                <legend>
+                  <label for="google-analytics-origin-germany">Germany</label>
+                </legend>
+                <progress
+                  id="google-analytics-origin-germany"
+                  max="100"
+                  value="90"
+                >
+                  90%
+                </progress>
+              </fieldset>
+              <fieldset>
+                <legend>
+                  <label for="google-analytics-origin-other">Other</label>
+                </legend>
+                <progress
+                  id="google-analytics-origin-other"
+                  max="100"
+                  value="10"
+                >
+                  10%
+                </progress>
+              </fieldset>
+            </fieldset>
+          </form>
+          <form>
+            <fieldset>
+              <legend>Age segments</legend>
+              <fieldset>
+                <legend>
+                  <label for="google-analytics-age-25-35">25-35</label>
+                </legend>
+                <progress id="google-analytics-age-25-35" max="100" value="67">
+                  67%
+                </progress>
+              </fieldset>
+              <fieldset>
+                <legend>
+                  <label for="google-analytics-age-other">Other</label>
+                </legend>
+                <progress id="google-analytics-age-other" max="100" value="33">
+                  33%
+                </progress>
+              </fieldset>
+            </fieldset>
+          </form>
+        </article>
+      </section>
+      <section aria-roledescription="gallery">
+        <h1>The world through my lenses</h1>
+        <div>
           <figure>
             <img src="./assets/image/gallery/12.jpeg" alt="Gallery #12" />
             <figcaption>Gallery #12</figcaption>
@@ -129,16 +418,12 @@
             <figcaption>Gallery #13</figcaption>
           </figure>
           <figure>
-            <img src="./assets/image/gallery/14.jpeg" alt="Gallery #14" />
-            <figcaption>Gallery #14</figcaption>
+            <img src="./assets/image/gallery/16.jpeg" alt="Gallery #16" />
+            <figcaption>Gallery #16</figcaption>
           </figure>
           <figure>
             <img src="./assets/image/gallery/15.jpeg" alt="Gallery #15" />
             <figcaption>Gallery #15</figcaption>
-          </figure>
-          <figure>
-            <img src="./assets/image/gallery/16.jpeg" alt="Gallery #16" />
-            <figcaption>Gallery #16</figcaption>
           </figure>
           <figure>
             <img src="./assets/image/gallery/17.jpeg" alt="Gallery #17" />
@@ -156,6 +441,134 @@
             <img src="./assets/image/gallery/20.jpeg" alt="Gallery #20" />
             <figcaption>Gallery #20</figcaption>
           </figure>
+          <figure>
+            <img src="./assets/image/gallery/14.jpeg" alt="Gallery #14" />
+            <figcaption>Gallery #14</figcaption>
+          </figure>
+        </div>
+      </section>
+      <section aria-roledescription="services">
+        <h1>What I offer</h1>
+        <article>
+          <h2>Content Creation</h2>
+          <ul>
+            <li>
+              Engaging blog posts featuring captivating travel narratives,
+              destination guides, travel tips, and insightful reviews of
+              accommodations, attractions, and activities
+            </li>
+            <li>
+              High-quality visual content including photographs and videos to
+              complement written pieces
+            </li>
+            <li>
+              Tailored content creation based on audience interests and client
+              specifications
+            </li>
+          </ul>
+        </article>
+        <article>
+          <h2>Giveaways</h2>
+          <ul>
+            <li>
+              Collaborative promotions offering products, experiences, or
+              services to the audience
+            </li>
+            <li>
+              Customized giveaway campaigns to boost brand visibility and engage
+              with the audience
+            </li>
+            <li>
+              Prominent promotion of giveaways across blog and social media
+            </li>
+          </ul>
+        </article>
+        <article>
+          <h2>User-Generated Content (UGC)</h2>
+          <ul>
+            <li>
+              In tincidunt est nec lacus ornare, nec consectetur elit faucibus
+            </li>
+            <li>
+              Pellentesque ac felis imperdiet ligula condimentum pulvinar non
+              vitae ex
+            </li>
+          </ul>
+        </article>
+        <article>
+          <h2>Press Trips</h2>
+          <ul>
+            <li>
+              Participating in press trips to explore destinations,
+              accommodations, or experiences firsthand
+            </li>
+            <li>
+              Comprehensive coverage of press trips through blog posts, social
+              media updates, and multimedia content
+            </li>
+            <li>
+              Collaborative storytelling to highlight the unique aspects of
+              destinations and experiences
+            </li>
+          </ul>
+        </article>
+        <article>
+          <h2>Sponsored Posts</h2>
+          <ul>
+            <li>
+              Crafting sponsored content integrating brand messaging into the
+              blog's narrative
+            </li>
+            <li>
+              Providing authentic and engaging sponsored posts tailored to the
+              audience's interests
+            </li>
+            <li>
+              Amplifying sponsored content through targeted promotion across
+              social media platforms
+            </li>
+          </ul>
+        </article>
+        <article>
+          <h2>Providing content management services for corporate blogs</h2>
+          <ul>
+            <li>
+              Curating social media content calendars and executing strategic
+              posting schedules to maximize engagement.
+            </li>
+          </ul>
+        </article>
+        <article>
+          <h2>Why collaborate with andysparkles?</h2>
+          <ul>
+            <li>Extensive reach and engagement across multiple platforms</li>
+            <li>
+              Authentic storytelling that resonates with a diverse audience
+            </li>
+            <li>
+              Proven track record of successful collaborations with brands in
+              different industries
+            </li>
+            <li>
+              Flexible and creative approach to content creation and promotion
+            </li>
+            <li>
+              Commitment to delivering measurable results and exceeding client
+              expectations
+            </li>
+          </ul>
+        </article>
+        <article>
+          <h2>Drop me a line</h2>
+          <p>
+            <a
+              href="mailto:andrea@andysparkles.de"
+              target="_blank"
+              title="andrea@andysparkles.de"
+              >Let's create unforgettable experiences and inspire wanderlust
+              together!</a
+            >
+          </p>
         </article>
       </section>
     </main>
