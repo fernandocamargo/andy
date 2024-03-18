@@ -8,6 +8,7 @@ body {
 
 main#mediakit {
   margin: 0 auto;
+  max-width: 1425px;
 
   figure,
   img {
@@ -98,6 +99,7 @@ main#mediakit {
     }
 
     &[aria-roledescription="gallery"] {
+      background-color: #000;
       max-height: 100vh;
       min-height: 100vh;
       overflow: hidden;
