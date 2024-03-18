@@ -260,8 +260,11 @@ main#mediakit {
       }
 
       h2 {
-        color: #000;
-        font-weight: 700;
+        background-color: #000;
+        color: #fff;
+        display: inline-block;
+        font-style: italic;
+        padding: 0.125rem 0.5rem;
       }
 
       li {
