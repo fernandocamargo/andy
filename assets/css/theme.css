@@ -13,6 +13,7 @@ body {
 }
 
 main#mediakit {
+  --page: 703px;
   margin: 0 auto;
   max-width: 1425px;
 

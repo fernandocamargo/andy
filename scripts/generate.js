@@ -5,14 +5,6 @@ const puppeteer = require('puppeteer');
     const browser = await puppeteer.launch({ defaultViewport: null });
     const page = await browser.newPage();
 
-    /*
-    await page.setViewport({
-        width: 1425,
-        height: 703,
-        deviceScaleFactor: 1,
-    });
-    */
-
     // Go to your HTML page
     await page.goto('http://192.168.0.120:8080/', {
         waitUntil: 'networkidle0' // Wait for all network connections to finish
