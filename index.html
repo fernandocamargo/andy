@@ -10,8 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      rel="preload stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Prata&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Orbitron:wght@400..900&family=Prata&display=swap"
+      rel="stylesheet"
       as="style"
     />
   </head>
@@ -20,8 +20,8 @@
       <section aria-roledescription="about-me">
         <h1>About me</h1>
         <p>
-          Welcome to <dfn>andysparkles</dfn>, where passion meets adventure and
-          style! Since its inception in 2013,
+          Welcome to <dfn title="by Andrea Funk">andysparkles</dfn>, where
+          passion meets adventure and style! Since its inception in 2013,
           <a href="https://andysparkles.de/" target="_blank" title="my blog"
             >my blog</a
           >
@@ -170,240 +170,132 @@
           </ul>
         </nav>
         <article aria-roledescription="instagram-insights">
-          <h2>Instagram audience</h2>
-          <dl>
-            <dt>Engagement Rate</dt>
+          <h2>Instagram Insights</h2>
+          <dl aria-roledescription="engagement-rate">
+            <dt>Engagement rate</dt>
             <dd>1,43%</dd>
           </dl>
-          <form>
-            <fieldset>
-              <legend>Gender segments</legend>
-              <fieldset>
-                <legend>
-                  <label for="instagram-gender-female">Female</label>
-                </legend>
-                <progress id="instagram-gender-female" max="100" value="62.3">
-                  62,3%
-                </progress>
-              </fieldset>
-              <fieldset>
-                <legend>
-                  <label for="instagram-gender-male">Male</label>
-                </legend>
-                <progress id="instagram-gender-male" max="100" value="37.6">
-                  37,6%
-                </progress>
-              </fieldset>
-              <fieldset>
-                <legend>
-                  <label for="instagram-gender-other">Other</label>
-                </legend>
-                <progress id="instagram-gender-other" max="100" value="0.1">
-                  0,1%
-                </progress>
-              </fieldset>
-            </fieldset>
-          </form>
-          <form>
-            <fieldset>
-              <legend>Origin segments</legend>
-              <fieldset>
-                <legend>
-                  <label for="instagram-origin-germany">Germany</label>
-                </legend>
-                <progress id="instagram-origin-germany" max="100" value="59.4">
-                  59,4%
-                </progress>
-              </fieldset>
-              <fieldset>
-                <legend>
-                  <label for="instagram-origin-austria">Austria</label>
-                </legend>
-                <progress id="instagram-origin-austria" max="100" value="5">
-                  5%
-                </progress>
-              </fieldset>
-              <fieldset>
-                <legend>
-                  <label for="instagram-origin-usa">USA</label>
-                </legend>
-                <progress id="instagram-origin-usa" max="100" value="2.7">
-                  2,7%
-                </progress>
-              </fieldset>
-              <fieldset>
-                <legend>
-                  <label for="instagram-origin-india">India</label>
-                </legend>
-                <progress id="instagram-origin-india" max="100" value="1.9">
-                  1,9%
-                </progress>
-              </fieldset>
-              <fieldset>
-                <legend>
-                  <label for="instagram-origin-italia">Italia</label>
-                </legend>
-                <progress id="instagram-origin-italia" max="100" value="1.7">
-                  1,7%
-                </progress>
-              </fieldset>
-              <fieldset>
-                <legend>
-                  <label for="instagram-origin-other">Other</label>
-                </legend>
-                <progress id="instagram-origin-other" max="100" value="29.3">
-                  29,3%
-                </progress>
-              </fieldset>
-            </fieldset>
-          </form>
-          <form>
-            <fieldset>
-              <legend>Age segments</legend>
-              <fieldset>
-                <legend>
-                  <label for="instagram-age-13-17">13-17</label>
-                </legend>
-                <progress id="instagram-age-13-17" max="100" value="3.7">
-                  3,7%
-                </progress>
-              </fieldset>
-              <fieldset>
-                <legend>
-                  <label for="instagram-age-18-24">18-24</label>
-                </legend>
-                <progress id="instagram-age-18-24" max="100" value="28.7">
-                  28,7%
-                </progress>
-              </fieldset>
-              <fieldset>
-                <legend>
-                  <label for="instagram-age-25-34">25-34</label>
-                </legend>
-                <progress id="instagram-age-25-34" max="100" value="34.6">
-                  34,6%
-                </progress>
-              </fieldset>
-              <fieldset>
-                <legend>
-                  <label for="instagram-age-35-44">35-44</label>
-                </legend>
-                <progress id="instagram-age-35-44" max="100" value="20">
-                  20%
-                </progress>
-              </fieldset>
-              <fieldset>
-                <legend>
-                  <label for="instagram-age-45-64">45-64</label>
-                </legend>
-                <progress id="instagram-age-45-64" max="100" value="3">
-                  3%
-                </progress>
-              </fieldset>
-              <fieldset>
-                <legend>
-                  <label for="instagram-age-65-plus">65+</label>
-                </legend>
-                <progress id="instagram-age-65-plus" max="100" value="1.2">
-                  1,2%
-                </progress>
-              </fieldset>
-              <fieldset>
-                <legend>
-                  <label for="instagram-age-other">Other</label>
-                </legend>
-                <progress id="instagram-age-other" max="100" value="8.8">
-                  8,8%
-                </progress>
-              </fieldset>
-            </fieldset>
-          </form>
+          <dl aria-roledescription="gender-segments">
+            <dt>Gender segments</dt>
+            <dd>
+              <dl style="--percentage: 0.624">
+                <dt title="62,4%">Female</dt>
+                <dd>62,4%</dd>
+              </dl>
+              <dl style="--percentage: 0.376">
+                <dt title="37,6%">Male</dt>
+                <dd>37,6%</dd>
+              </dl>
+            </dd>
+          </dl>
+          <dl aria-roledescription="origin-segments">
+            <dt>Origin segments</dt>
+            <dd>
+              <dl style="--percentage: 0.594">
+                <dt title="59,4%">Germany</dt>
+                <dd>59,4%</dd>
+              </dl>
+              <dl style="--percentage: 0.05">
+                <dt title="5%">Austria</dt>
+                <dd>5%</dd>
+              </dl>
+              <dl style="--percentage: 0.027">
+                <dt title="2,7%">USA</dt>
+                <dd>2,7%</dd>
+              </dl>
+              <dl style="--percentage: 0.019">
+                <dt title="1,9%">India</dt>
+                <dd>1,9%</dd>
+              </dl>
+              <dl style="--percentage: 0.017">
+                <dt title="1,7%">Italia</dt>
+                <dd>1,7%</dd>
+              </dl>
+              <dl style="--percentage: 0.293">
+                <dt title="29,3%">Other</dt>
+                <dd>29,3%</dd>
+              </dl>
+            </dd>
+          </dl>
+          <dl aria-roledescription="age-segments">
+            <dt>Age segments</dt>
+            <dd>
+              <dl style="--percentage: 0.037">
+                <dt title="3,7%">13-17</dt>
+                <dd>3,7%</dd>
+              </dl>
+              <dl style="--percentage: 0.287">
+                <dt title="28,7%">18-24</dt>
+                <dd>28,7%</dd>
+              </dl>
+              <dl style="--percentage: 0.346">
+                <dt title="34,6%">25-34</dt>
+                <dd>34,6%</dd>
+              </dl>
+              <dl style="--percentage: 0.2">
+                <dt title="20%">35-44</dt>
+                <dd>20%</dd>
+              </dl>
+              <dl style="--percentage: 0.03">
+                <dt title="3%">45-64</dt>
+                <dd>3%</dd>
+              </dl>
+              <dl style="--percentage: 0.012">
+                <dt title="1,2%">65+</dt>
+                <dd>1,2%</dd>
+              </dl>
+              <dl style="--percentage: 0.088">
+                <dt title="8,8%">Other</dt>
+                <dd>8,8%</dd>
+              </dl>
+            </dd>
+          </dl>
         </article>
-        <article aria-roledescription="google-analytics-insights">
+        <article aria-roledescription="google-analytics">
           <h2>Google Analytics</h2>
-          <dl>
-            <dt>Unique visitors</dt>
+          <dl aria-roledescription="unique-visitors">
+            <dt>Unique visitors per month</dt>
             <dd>~10k</dd>
           </dl>
-          <form>
-            <fieldset>
-              <legend>Gender segments</legend>
-              <fieldset>
-                <legend>
-                  <label for="google-analytics-gender-female">Female</label>
-                </legend>
-                <progress
-                  id="google-analytics-gender-female"
-                  max="100"
-                  value="74"
-                >
-                  74%
-                </progress>
-              </fieldset>
-              <fieldset>
-                <legend>
-                  <label for="google-analytics-gender-other">Other</label>
-                </legend>
-                <progress
-                  id="google-analytics-gender-other"
-                  max="100"
-                  value="26"
-                >
-                  26%
-                </progress>
-              </fieldset>
-            </fieldset>
-          </form>
-          <form>
-            <fieldset>
-              <legend>Origin segments</legend>
-              <fieldset>
-                <legend>
-                  <label for="google-analytics-origin-germany">Germany</label>
-                </legend>
-                <progress
-                  id="google-analytics-origin-germany"
-                  max="100"
-                  value="90"
-                >
-                  90%
-                </progress>
-              </fieldset>
-              <fieldset>
-                <legend>
-                  <label for="google-analytics-origin-other">Other</label>
-                </legend>
-                <progress
-                  id="google-analytics-origin-other"
-                  max="100"
-                  value="10"
-                >
-                  10%
-                </progress>
-              </fieldset>
-            </fieldset>
-          </form>
-          <form>
-            <fieldset>
-              <legend>Age segments</legend>
-              <fieldset>
-                <legend>
-                  <label for="google-analytics-age-25-35">25-35</label>
-                </legend>
-                <progress id="google-analytics-age-25-35" max="100" value="67">
-                  67%
-                </progress>
-              </fieldset>
-              <fieldset>
-                <legend>
-                  <label for="google-analytics-age-other">Other</label>
-                </legend>
-                <progress id="google-analytics-age-other" max="100" value="33">
-                  33%
-                </progress>
-              </fieldset>
-            </fieldset>
-          </form>
+          <dl aria-roledescription="gender-segments">
+            <dt>Gender segments</dt>
+            <dd>
+              <dl style="--percentage: 0.74">
+                <dt>Female</dt>
+                <dd>74%</dd>
+              </dl>
+              <dl style="--percentage: 0.26">
+                <dt>Other</dt>
+                <dd>26%</dd>
+              </dl>
+            </dd>
+          </dl>
+          <dl aria-roledescription="origin-segments">
+            <dt>Origin segments</dt>
+            <dd>
+              <dl style="--percentage: 0.9">
+                <dt>Germany</dt>
+                <dd>90%</dd>
+              </dl>
+              <dl style="--percentage: 0.1">
+                <dt>Other</dt>
+                <dd>10%</dd>
+              </dl>
+            </dd>
+          </dl>
+          <dl aria-roledescription="age-segments">
+            <dt>Age segments</dt>
+            <dd>
+              <dl style="--percentage: 0.67">
+                <dt>25-35</dt>
+                <dd>67%</dd>
+              </dl>
+              <dl style="--percentage: 0.33">
+                <dt>Other</dt>
+                <dd>33%</dd>
+              </dl>
+            </dd>
+          </dl>
         </article>
       </section>
       <section aria-roledescription="gallery">
