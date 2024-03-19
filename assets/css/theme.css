@@ -218,6 +218,19 @@ main#mediakit {
           grid-area: instagram-insights;
 
           & > dl {
+            &[aria-roledescription="gender-segments"] {
+              & > dd dl {
+                &:nth-child(1) {
+                  background-color: #f8f9fa;
+                  color: #000;
+                }
+
+                &:nth-child(2) {
+                  background-color: #212529;
+                }
+              }
+            }
+
             &[aria-roledescription="origin-segments"] {
               & > dd dl {
                 &:nth-child(2),
@@ -419,6 +432,7 @@ main#mediakit {
           grid-area: google-analytics;
 
           & > dl {
+            &[aria-roledescription="gender-segments"],
             &[aria-roledescription="origin-segments"],
             &[aria-roledescription="age-segments"] {
               & > dd dl {
@@ -428,7 +442,7 @@ main#mediakit {
                 }
 
                 &:nth-child(2) {
-                  background-color: #212529;
+                  background-color: #343a40;
                 }
               }
             }
@@ -460,19 +474,6 @@ main#mediakit {
               font-size: 5rem;
               font-weight: 900;
               line-height: 5rem;
-            }
-          }
-
-          &[aria-roledescription="gender-segments"] {
-            & > dd dl {
-              &:nth-child(1) {
-                background-color: #f8f9fa;
-                color: #000;
-              }
-
-              &:nth-child(2) {
-                background-color: #212529;
-              }
             }
           }
 
